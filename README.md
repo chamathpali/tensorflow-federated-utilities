@@ -1,13 +1,13 @@
-# TensorFlow Federated Utilities
-To create helper methods to support TFF functionalities for existing projects. Ex: Data model conversions...
+# 🛠 TensorFlow Federated Utilities 🛠
+Aim is to create and maintain helper methods to support TFF functionalities which are generally required to support the upcoming federated setting. Ex: Data model conversions...
 
 Helper methods overview.
 
-1. [Client Simulation dataset for each clients](#create_fed_data)
+1. [Client Simulation dataset for each clients](#create_fed_data) 
 2. More to come....
 
 ## create_fed_data
-This method can be used to build the simulation dataset in the TF dataset format **(tf.data.Dataset)** which is required to build up the federated settings.
+This method can be used to build the simulation dataset in the TF dataset format **[(tf.data.Dataset)](https://www.tensorflow.org/api_docs/python/tf/data/Dataset)** which is required to build up the federated settings. And the end result is to build the full dataset into a **[tff.simulation.ClientData](https://www.tensorflow.org/federated/api_docs/python/tff/simulation/ClientData)** type.
 
 ### Usage
 1. Using the tff.simulation.ClientData.from_clients_and_fn which allows to pass a function to build the dataset.
